@@ -69,7 +69,7 @@ lung_metastasis = st.sidebar.selectbox("Lung metastasis", options=list(lung_meta
 
 if st.button("Predict"):
     prediction, probability = predict_liver_metastasisage(age, primary_site, histologic, tumor_grade,
-                             t_stage, n_stage, surgery, radiation, chemotherapy, bone_metastasis, lung_metastasis)
+                             t_stage, n_stage, chemotherapy, bone_metastasis, lung_metastasis)
 
     st.write("Probability of developing liver metastasis：", prediction)  # 结果显示在右侧的列中
     st.write("Probability of developing liver metastasis：", probability)  # 结果显示在右侧的列中

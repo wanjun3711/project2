@@ -16,15 +16,9 @@ y = train_data['Liver metastasis']
 gbm_model = GradientBoostingClassifier()
 gbm_model.fit(X, y)
 
-# 保存模型到桌面
-desktop_path = 'C:/Users/wanjun3711/Desktop/'
-model_path = desktop_path + 'gbm_model.model'
+# 保存模型
+model_path = 'gbm_model.pkl'
 joblib.dump(gbm_model, model_path)
-
-# 加载模型
-model_path = 'gbm_model.model'
-gbm_model = GradientBoostingClassifier()
-gbm_model = joblib.load(model_path)
 
 # 特征映射
 class_mapping = {0: "No liver metastasis", 1: "Esophagus cancer liver metastasis"}

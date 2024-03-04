@@ -27,7 +27,7 @@ primary_site_mapper = {"Upper third of esophagus": 4,"Middle third of esophagus"
     "Lower third of esophagus": 2, "Overlapping lesion of esophagus": 3}
 
 histologic_mapper = {"Adenocarcinoma": 2, "Squamous–cell carcinoma": 1}
-tumor_grade_mapper = {"Grade I+II": 3, "Grade III": 1, "Grade Ⅳ": 2}
+tumor_grade_mapper = {"Grade I": 3, "Grade II": 1, "Grade III": 2}
 t_stage_mapper = {"T1": 4, "T2": 1, "T3": 2, "T4": 3}
 n_stage_mapper = {"N0": 4, "N1": 1, "N2": 2, "N3": 3}
 chemotherapy_mapper = {"NO": 2, "Yes": 1}

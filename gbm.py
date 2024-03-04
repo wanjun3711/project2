@@ -72,5 +72,5 @@ if st.button("Predict"):
                                                        t_stage, n_stage, chemotherapy, bone_metastasis,
                                                        lung_metastasis)
 
-    st.write("Predicted class label:", prediction)
+    st.write("Probability of developing liver metastasis:", prediction)
     st.write("Probability of developing liver metastasis:", probability)

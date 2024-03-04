@@ -25,7 +25,6 @@ class_mapping = {0: "No liver metastasis", 1: "Esophagus cancer liver metastasis
 age_mapper = {"<70": 3, "70-80": 1, ">=80": 2}
 primary_site_mapper = {"Upper third of esophagus": 4,"Middle third of esophagus": 1,
     "Lower third of esophagus": 2, "Overlapping lesion of esophagus": 3}
-
 histologic_mapper = {"Adenocarcinoma": 2, "Squamous–cell carcinoma": 1}
 tumor_grade_mapper = {"Grade I": 3, "Grade II": 1, "Grade III": 2}
 t_stage_mapper = {"T1": 4, "T2": 1, "T3": 2, "T4": 3}
@@ -36,8 +35,7 @@ lung_metastasis_mapper = {"NO": 2, "Yes": 1}
 
 # 预测函数
 def predict_liver_metastasis(age, primary_site, histologic, tumor_grade,
-                             t_stage, n_stage, surgery, radiation,
-                             chemotherapy, bone_metastasis, lung_metastasis):
+                             t_stage, n_stage, chemotherapy, bone_metastasis, lung_metastasis):
     input_data = pd.DataFrame({
         'Age': [age_mapper[age]],
         'Primary Site': [primary_site_mapper[primary_site]],

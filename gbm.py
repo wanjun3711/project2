@@ -11,7 +11,7 @@ train_data = pd.read_csv('train_data - 副本.csv')
 
 # 分离输入特征和目标变量
 X = train_data[['Age', 'Primary Site', 'Histologic', 'Tumor grade',
-                   'T stage', 'N stage', 'surgery', 'Chemotherapy', 'Bone metastasis', 'Lung metastasis']]
+                   'T stage', 'N stage', 'Surgery', 'Radiation', 'Chemotherapy', 'Bone metastasis', 'Lung metastasis']]
 y = train_data['Liver metastasis']
 
 # 创建并训练GBM模型
